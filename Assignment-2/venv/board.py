@@ -8,17 +8,15 @@ class Board:
         self.map = [[0 for j in range(n)] for i in range(n)]
 
     def set_queens(self):
-        count = self.n_queen
-        while count > 0:
-            x = random.randint(0, self.n_queen ** 2 - 1)
-            i = x // self.n_queen
-            j = x - i * self.n_queen
-            if self.map[i][j] != 1:
-                self.map[i][j] = 1
-                count -= 1
+        for i in range(self.n_queen):
+            j = random.randint(0, self.n_queen - 1)
+            self.map[i][j] = 1
 
     def show(self):
         print(np.matrix(self.map))
+
+    def getMap(self):
+        return self.map
 
 
 if __name__ == '__main__':

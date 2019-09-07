@@ -11,3 +11,4 @@ if __name__ == '__main__':
     brd.set_queens()
     brd.show()
 
+
