@@ -1,14 +1,17 @@
+# Justin Terry
+# CECS 451 A.I.
+# 9/12/2019
+
 from board import Board
 import random
-# Maximum non-attacking pairs is 10
 
 class Genetic:
     def __init__(self):
-        self.no_boards, self.max_steps, self.num_queens = self.setup()
+        self.no_boards = 0
+        self.max_steps = 0
+        self.num_queens = 0;
         self.no_steps = 1
         self.boards = []
-        self.create_boards()
-        self.find_a_solution(self.max_steps)
 
     def setup(self):
         num_boards = 3
@@ -22,10 +25,13 @@ class Genetic:
             num_queens = int(input("How many queens would you like to place? (Must be greater than 3)?:"))
             if (num_queens <= 3):
                 print("That is impossible.")
-        return num_boards, max_tries, num_queens
+        self.no_boards = num_boards
+        self.max_steps = max_tries
+        self.num_queens = num_queens
+        self.create_boards()
 
-    def find_a_solution(self, max_steps):
-        while (self.no_steps < max_steps):
+    def find_a_solution(self):
+        while (self.no_steps < self.max_steps):
             print("Step #" + str(self.no_steps))
             self.show_boards()
             self.show_fitness()
@@ -71,7 +77,7 @@ class Genetic:
         # Convert the fitness values to percentage values
         fitness_values = self.map_fitness_to_percent(fitness_values, fitness_total)
         # Perform selection to get new states, second param of function is the eliteism scalar
-        new_states = self.selection(fitness_values, 1)
+        new_states = self.selection(fitness_values, 100)
         # Perform crossover
         crossed_over_states = self.perform_crossover(new_states)
         # Perform mutation
@@ -148,6 +154,8 @@ class Genetic:
         return fitness_values
 
 
-# if __name__ == '__main__':
-#     brd = Board(5)
-#     brd.set_queens()
+if __name__ == '__main__':
+    # Run genetic
+    gene = Genetic()
+    gene.setup()
+    gene.find_a_solution()

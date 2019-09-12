@@ -50,6 +50,19 @@ class Board:
                         if j + k < self.n_queen and self.map[i + k][j + k] == 1:
                             self.fit -= 1
 
+    def fitness(self):
+        self.fit = self.n_queen * (self.n_queen - 1) // 2
+        for i in range(self.n_queen):
+            for j in range(self.n_queen):
+                if self.map[i][j] == 1:
+                    for k in range(1, self.n_queen - i):
+                        if self.map[i + k][j] == 1:
+                            self.fit -= 1
+                        if j - k >= 0 and self.map[i + k][j - k] == 1:
+                            self.fit -= 1
+                        if j + k < self.n_queen and self.map[i + k][j + k] == 1:
+                            self.fit -= 1
+
 
 if __name__ == '__main__':
     test = Board(5)
