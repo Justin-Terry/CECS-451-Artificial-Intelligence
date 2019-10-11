@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6aa54d2-65ca-4b6d-b859-bc2a96f6eb16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/venv/hill_climb2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/genetic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/genetic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/hill_climb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/hill_climb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/main.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,14 +15,15 @@
     <session id="1247217345">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -45,26 +42,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="26" />
-          <entry key="py" value="14598" />
+          <entry key="py" value="14611" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Python" value="14598" />
+          <entry key="Python" value="14611" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/genetic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="77">
+              <caret line="113" column="62" selection-start-line="113" selection-start-column="18" selection-end-line="113" selection-end-column="62" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
                 <marker date="1568332531800" expanded="true" signature="277:1006" ph="..." />
                 <marker date="1568332531800" expanded="true" signature="1032:1407" ph="..." />
                 <marker date="1568332531800" expanded="true" signature="1831:1907" ph="..." />
@@ -75,26 +71,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/hill_climb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="391">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
               <folding>
-                <marker date="1568332531816" expanded="true" signature="157:382" ph="..." />
-                <marker date="1568332531816" expanded="false" signature="2128:2133" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/hill_climb2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="11" />
-              <folding>
-                <element signature="e#40#53#0" expanded="true" />
+                <marker date="1568411812422" expanded="true" signature="157:382" ph="..." />
+                <marker date="1568411812422" expanded="false" signature="2145:2150" ph="..." />
               </folding>
             </state>
           </provider>
@@ -158,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,7 +174,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -325,8 +309,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.hill_climb" />
-        <item itemvalue="Python.hill_climb2" />
         <item itemvalue="Python.genetic" />
+        <item itemvalue="Python.hill_climb2" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
       </list>
@@ -354,13 +338,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3180328" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41639343" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37540984" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2852459" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.85737705" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -393,33 +377,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/main.py" />
-    <entry file="file://$PROJECT_DIR$/venv/board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1568301192448" expanded="true" signature="436:442" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/hill_climb2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="11" />
-          <folding>
-            <element signature="e#40#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/hill_climb2.py" />
     <entry file="file://$PROJECT_DIR$/venv/genetic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="77">
+          <caret line="113" column="62" selection-start-line="113" selection-start-column="18" selection-end-line="113" selection-end-column="62" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
             <marker date="1568332531800" expanded="true" signature="277:1006" ph="..." />
             <marker date="1568332531800" expanded="true" signature="1032:1407" ph="..." />
             <marker date="1568332531800" expanded="true" signature="1831:1907" ph="..." />
@@ -431,11 +394,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/hill_climb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="391">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
           <folding>
-            <marker date="1568332531816" expanded="true" signature="157:382" ph="..." />
-            <marker date="1568332531816" expanded="false" signature="2128:2133" ph="..." />
+            <marker date="1568411812422" expanded="true" signature="157:382" ph="..." />
+            <marker date="1568411812422" expanded="false" signature="2145:2150" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1568301192448" expanded="true" signature="436:442" ph="..." />
           </folding>
         </state>
       </provider>

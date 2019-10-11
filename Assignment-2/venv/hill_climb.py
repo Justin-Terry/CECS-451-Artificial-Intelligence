@@ -21,7 +21,7 @@ class Hill_Climb:
         while(True):
             if num_searches > self.stuck_at:
                 print("\nStuck after", self.stuck_at,"tries, trying random board.")
-                self.board = Board(8)
+                self.board = Board(self.board.n_queen)
                 self.board.set_queens()
                 num_searches = 0
             else:
