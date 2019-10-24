@@ -14,12 +14,14 @@ class Gibbs:
         self.performMCMC()
 
     def partA(self):
+        print("\nPart A. The sampling probabilities")
         print("P(C|-s,r) = <0.8748, 0.1252>")
         print("P(C|-s,-r) = <0.3103, 0.6897>")
         print("P(R|c,-s,w) = <1,0>")
         print("P(R|-c,-s,w) = <1,0>")
 
     def partB(self):
+        print("\nPart B. The transition probability matrix")
         print(tabulate(self.transition, ["S1", "S2", "S3", "S4"], tablefmt="simple"))
 
     def createRandomState(self):
@@ -81,8 +83,6 @@ class Gibbs:
             #-r, -s
             return 0
 
-
-
     def performMCMC(self):
         numOfNotC = 0
         numOfC = 0
@@ -90,14 +90,16 @@ class Gibbs:
         for i in range(1000000):
             state = self.createRandomState()
             if(state[0] == 0 and state[2] == 0 and state[3] == 1):
+                # (-c, -s, w)
                 numOfNotC += 1
                 numOfRuns += 1
             elif (state[0] == 1 and state[2] == 0 and state[3] == 1):
+                # (c, -s, w)
                 numOfC += 1
                 numOfRuns += 1
 
-        print("<", numOfC/numOfRuns, ",", numOfNotC/numOfRuns, ">")
-
+        print("\nPart C. The probability for the query")
+        print("P(C|-s,w) = <", numOfC/numOfRuns, ",", numOfNotC/numOfRuns, ">")
 
 if __name__ == '__main__':
     driver = Gibbs()
