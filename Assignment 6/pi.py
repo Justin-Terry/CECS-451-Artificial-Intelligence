@@ -1,6 +1,12 @@
 import random
 import math
 
+#
+# Author: Justin Terry
+# Team: Team 1
+# Assignment: Assignment 6
+#
+
 class Pi:
     def __init__(self, exp):
         self.exp = exp

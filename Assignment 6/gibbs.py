@@ -2,6 +2,12 @@
 from tabulate import tabulate
 import random
 
+#
+# Author: Justin Terry
+# Team: Team 1
+# Assignment: Assignment 6
+#
+
 class Gibbs:
 
     def __init__(self):
