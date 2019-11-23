@@ -2,6 +2,7 @@ from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn import tree, ensemble
 import matplotlib.pyplot as plt
+from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import random
@@ -21,8 +22,7 @@ class Evaluation:
 
     def decision_tree(self):
         tree_one = tree.DecisionTreeClassifier(criterion="gini").fit(self.X_train, self.y_train)
-        self.tree_score = tree_one.score(self.X_test, self.y_test)
-        print(self.tree_score)
+
 
     def bagging(self):
         # n_estimators = # of trees
@@ -34,26 +34,25 @@ class Evaluation:
         plt.plot(keys, values, 'ro')
         plt.title("Bagging Graph")
         plt.axis([0,27,0,1])
+        plt.savefig('bagging.png')
         plt.show()
 
     def forest(self):
         mfs = []
-        for i in range(1, 101):
+        for i in range(1, 102):
             mf = random.randrange(1,31)
             mfs.append(mf)
             forest = ensemble.RandomForestClassifier(n_estimators=20, max_features=mf).fit(self.X_train, self.y_train)
             self.forest_score[i] = forest.score(self.X_test, self.y_test)
-        X = list(self.forest_score.keys())
+        X = np.array(list(self.forest_score.keys()))
+        Y = np.array(mfs)
         Z = np.array(list(self.forest_score.values()))
-        Zc = np.resize(Z, (-1, 2))
-        Y = mfs
-
         fig = plt.figure()
-        ax = fig.add_subplot(111, projection='3d')
-        ax.set_xlim3d(0, 102)
-        ax.set_ylim3d(0, 31)
-        ax.set_zlim3d(0, 1)
-        ax.plot_surface(np.array(X), np.array(Y), Zc)
+        ax = Axes3D(fig)
+        surf = ax.plot_trisurf(X, Y, Z, cmap=cm.gnuplot, linewidth=0.5)
+        fig.colorbar(surf, shrink=0.5, aspect=5)
+        plt.title("Forest Graph")
+        plt.savefig('forest.png')
         plt.show()
 
     def boost(self):
@@ -65,6 +64,7 @@ class Evaluation:
         plt.plot(keys, values, 'ro')
         plt.title("Boost Graph")
         plt.axis([0,27,0,1])
+        plt.savefig('boost.png')
         plt.show()
 
 
@@ -73,8 +73,8 @@ class Evaluation:
 
 if __name__ == '__main__':
     exp = Evaluation()
-    # exp.decision_tree()
-    # exp.bagging()
+    exp.decision_tree()
+    exp.bagging()
     exp.forest()
-    # exp.boost()
+    exp.boost()
     # exp.summary()
